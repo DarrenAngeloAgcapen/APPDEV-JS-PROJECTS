@@ -1,16 +1,19 @@
-const quote= ["Tolerance and Apathy are the last virtues of a dying society. -Aristotle", "Anyone who holds a true opinion without understanding is like a blind man on the right road. -Socrates"]
-const btn=document.getElementById("btn")
-const color= document.querySelector(".quote")
+const quotes= ["Tolerance and Apathy are the last virtues of a dying society. -Aristotle", 
+"Anyone who holds a true opinion without understanding is like a blind man on the right road. -Socrates",
+"It is our choice of good or evil that determines our character, not our opinion about good or evil. -Aristotle",
+"The only thing I know is that I know nothing. -Socrates",
+"He who is not satisfied with a little, is satisfiedwith nothing. -Epicurus"]
 
-btn.addEventListener("click",  () => {
-    let hexColor = '#'
-    for (let i=0; i>=9; i++){
-        hexColor += hex[getRandomNumber()]
-    }
-    color.textContent = hexColor
-    document.body.style.backgroundColor = hexColor
+
+const btn= document.getElementById("btn")
+const quote= document.querySelector(".quote")
+
+btn.addEventListener("click", () =>{
+    console.log(document.body)
+    const randomNumber = getRandomNumber()
+    quote.textContent = quotes[randomNumber]
 })
 
-getRandomNumber = () => {
-    return Math.floor(Math.random() * hex.length)
+getRandomNumber = () =>{
+    return Math.floor(Math.random() * quotes.length)
 }
