@@ -57,7 +57,7 @@ btn6.addEventListener("click", () =>{
     let calories= serving* 300
     let calPerBag=(bag/4) *300
     let calPerCookies=300/4
-    let output6 = `If the user has eaten ${cookies} pieces of cookies, it is equivalent to ${serving} servings of cookies. A serving of cookie has 300 calories, then the user has just consumed ${calories} calories. An unopened bag of cookies that has ${bag} cookies inside, has ${calPerBag} calories. Note that a single piece of cookie has ${calPerCookies} calories.`
+    let output6 = `An unopened bag of cookies has ${bag} pieces cookies inside, has ${calPerBag} calories. Based on this, a single piece of cookie has ${calPerCookies} calories. A single serving of cookies which is equivalent to 4 pieces of cookies, has 300 calories. If the user has eaten ${cookies} pieces of cookies, it is equivalent to ${serving} servings of cookies, then the user has just consumed ${calories} calories.`
     document.getElementById("output6").innerHTML = output6
 })
 
@@ -72,7 +72,7 @@ btn7.addEventListener("click", () => {
     let output7 = `
     TOTAL STUDENTS IN CLASS: ${total}<br/>
     Percentage of Male: ${malp}% <br/>
-    Percentage of Female: ${femp}%
+    Percentage of Female: ${femp}% <br/>
     `
     document.getElementById("output7").innerHTML = output7
 })
