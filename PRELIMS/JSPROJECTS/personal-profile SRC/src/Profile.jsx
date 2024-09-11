@@ -14,16 +14,17 @@ export default function Profile(props){ //props-to pass information to functiona
 }
 Profile.defaultProps = {
     name:"Guest",
-
+    hobby:"Unknown",
     food:"Unknown",
-    isHealthy: false,
-    isDelicious: true,
-    age: 0
+    course: "Unknown",
+    isCourseRelevant: true,
+    age: 18
 }
 Profile.PropTypes = {
     name: PropTypes.string,
+    hobby: PropTypes.string,
     food: PropTypes.string,
-    isHealthy: PropTypes.bool,
-    isDelicious: PropTypes.bool,
+    course: PropTypes.string,
+    isCourseRelevant: PropTypes.bool,
     age: PropTypes.number
 }
