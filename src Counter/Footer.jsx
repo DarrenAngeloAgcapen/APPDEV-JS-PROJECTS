@@ -5,7 +5,7 @@ export default function Footer() {
                 <hr />
                 <p>
                     &copy; {new Date().getFullYear()} My Counter 
-                    Website || Written By: Kep
+                    Website || Written By: Agcapen, Darren
                 </p>
             </footer>
         </>
