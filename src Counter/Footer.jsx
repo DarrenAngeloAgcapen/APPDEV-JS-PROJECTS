@@ -4,7 +4,7 @@ export default function Footer() {
             <footer>
                 <hr />
                 <p>
-                    &copy; {new Date().getFullYear()} My Counter 
+                    &copy; {new Date().getFullYear()} My Quote Generator
                     Website || Written By: Agcapen, Darren
                 </p>
             </footer>
