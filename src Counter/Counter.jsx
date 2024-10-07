@@ -20,7 +20,7 @@ export default function Counter(){
                     {count}
                 </p>
                 &nbsp;
-            </div>
+            
             <button className="button-container-decrement" onClick={decrementCount}>
             decrease
             </button>
@@ -30,7 +30,7 @@ export default function Counter(){
             <button className="button-container-increment" onClick={incrementCount}>
             increase
             </button>
-
+            </div>
         </>
     )
 }

@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import Header from"./Header"
 import Footer from"./Footer"
-import QuoteGen from './QuoteGen'
+import Counter from './Counter'
 
 function App() {
   return(
     <>
       <Header />
-      <QuoteGen />
+      <Counter />
       <Footer />
     </>
   )
