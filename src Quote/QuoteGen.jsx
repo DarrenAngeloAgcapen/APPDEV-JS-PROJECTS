@@ -12,33 +12,42 @@ const randomQuotes = [
 ];
 
 export default function QuoteGen() {
-    const [quote, setQuote] = useState(randomQuotes[0]);
-    const [color, setColor] = useState("#ffffff"); // Initialize color state
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    function getRandomNumber() {
-        return Math.floor(Math.random() * randomQuotes.length);
+    function getNextQuote() {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % randomQuotes.length);
+    }
+    
+    function getRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * randomQuotes.length);
+        setCurrentIndex(randomIndex);
     }
 
-    function getRandomColor() {
-        const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-        return randomColor;
+    function getPreviousQuote() {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + randomQuotes.length) % randomQuotes.length);
     }
 
-    function randomQuoteChange() {
-        setQuote(randomQuotes[getRandomNumber()]); // Set a new random quote
-        setColor(getRandomColor()); // Set a new random color
-    }
+    
 
     return (
         <div className="quote-gen-container">
-            <br /> <br />
-            <h1>Quote:</h1 >
+            <br /><br />
+            <h1>Quote:</h1>
             <div className="quote-display">    
-                <p className="quote">{quote}</p>
+                <p className="quote">{randomQuotes[currentIndex]}</p>
             </div>
-            <button className="randomize" onClick={randomQuoteChange}>
-                Random Quote
-            </button>
+            <div className="button-row">
+                <button className="previous" onClick={getPreviousQuote}>
+                    Previous Quote
+                </button>
+                <button className="random" onClick={getRandomQuote}>
+                    Random Quote
+                </button>
+                <button className="next" onClick={getNextQuote}>
+                    Next Quote
+                </button>
+                
+            </div>
         </div>
     );
 }
