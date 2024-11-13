@@ -1,0 +1,172 @@
+/* Basic Styles for the Shop Component */
+.shop-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f4f7f6;  /* Soft light grey background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3e4a59;  /* Muted dark blue for the heading */
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #4f5b66;  /* Slightly muted dark grey */
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Shop Items List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #555;  /* Slightly dark grey for readability */
+}
+
+li p {
+    font-size: 16px;
+    color: #777;  /* Light grey for price information */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #61a0af;  /* Soft blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4f8c99;  /* Slightly darker blue on hover */
+}
+
+button:disabled {
+    background-color: #b0c4c2;  /* Disabled button color */
+    cursor: not-allowed;
+}
+
+/* Cart Section */
+.cart-section {
+    margin-top: 20px;
+}
+
+.cart-section li {
+    font-weight: bold;
+}
+
+.cart-section .total-price {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e4a59;  /* Darker grey for total price */
+}
+
+/* Payment Section */
+.payment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.payment-section input[type="number"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #555;
+}
+
+.payment-section input[type="number"]:focus {
+    outline: none;
+    border-color: #61a0af;
+}
+
+.payment-section button {
+    padding: 10px 20px;
+    background-color: #61a0af;  /* Soft blue */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.payment-section button:hover {
+    background-color: #4f8c99;  /* Darker blue on hover */
+}
+
+/* Receipt Section */
+.receipt-section {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-section ul {
+    padding-left: 20px;
+}
+
+.receipt-section p {
+    font-size: 18px;
+    color: #333;  /* Dark grey for general text */
+}
+
+.receipt-section .total-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4CAF50;  /* Green for total price */
+}
+
+.receipt-section .change {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f44336;  /* Red for insufficient amount */
+}
+
+/* Miscellaneous Styles */
+strong {
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .shop-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    input[type="number"] {
+        width: 150px;
+    }
+}

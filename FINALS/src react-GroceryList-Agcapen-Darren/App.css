@@ -1,0 +1,155 @@
+/* Basic Styles for the Shop Component */
+.shop-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #4CAF50;
+  text-align: center;
+}
+
+h4 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Shop Items List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Shop Item styling */
+li p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Cart Section */
+h4 + ul {
+  margin-top: 20px;
+}
+
+.cart-section li {
+  font-weight: bold;
+}
+
+.cart-section .total-price {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Payment Section */
+input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 150px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b7dda;
+}
+
+/* Receipt Section */
+.receipt-section {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-section ul {
+  padding-left: 20px;
+}
+
+.receipt-section p {
+  font-size: 16px;
+}
+
+.receipt-section .total-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.receipt-section .change {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f44336; /* Red color for insufficient amounts */
+}
+
+.receipt-section .change.negative {
+  color: #f44336; /* Color for insufficient payment */
+}
+
+/* Miscellaneous Styles */
+strong {
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .shop-container {
+      padding: 15px;
+  }
+
+  button {
+      padding: 6px 12px;
+  }
+
+  input[type="number"] {
+      width: 120px;
+  }
+}
