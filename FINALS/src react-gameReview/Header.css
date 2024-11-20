@@ -1,0 +1,35 @@
+header {
+    background-color: burlywood;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid black;
+    width: 98%;
+    margin: 20px 0;
+}
