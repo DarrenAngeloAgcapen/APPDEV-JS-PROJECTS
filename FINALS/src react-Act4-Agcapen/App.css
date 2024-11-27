@@ -1,0 +1,47 @@
+h1{
+    color: brown;
+}
+p{
+    color: darkslateblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+ul li{
+    font-size: xx-large;
+}
+
+nav {
+    background-color: darkslategray; 
+    padding: 20px 20px;
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: flex-start;
+
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+
+  }
+  
+  nav ul li a {
+    text-decoration: none; 
+    color: burlywood; 
+    font-weight: bold; 
+    transition: color 0.3s;
+    font-size: x-large;
+  }
+  
+  nav ul li a:hover {
+    color:aqua; 
+  }
+  
+body{
+    background-color: burlywood;
+}
