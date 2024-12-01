@@ -1,0 +1,32 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .review-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .review-card h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .review-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
