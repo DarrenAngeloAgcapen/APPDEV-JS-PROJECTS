@@ -12,11 +12,17 @@ const ProductManual = () => {
   const product = products.find((p) => p.id === parseInt(productId));
   const [reviews, setReviews] = useState([]);
   const [newReview, setNewReview] = useState("");
+  const [newUser, setNewUser] = useState("");
+  const [user, setUser] =useState("");
 
   const handleReviewSubmit = () => {
-    if (newReview.trim()) {
-      setReviews([...reviews, newReview]);
-      setNewReview("");
+    if (newUser.trim()){
+      setUser ([...user, newUser]);
+        setNewUser("");
+        if (newReview.trim()) {
+        setReviews([...reviews, newReview]);
+        setNewReview("");
+      } 
     }
   };
 
@@ -24,10 +30,16 @@ const ProductManual = () => {
     <div>
       <h1>{product.name}</h1>
       <p>{product.description}</p>
-      <h3>Reviews</h3>
+      <h3>REVIEWS</h3>
       {reviews.map((review, idx) => (
         <p key={idx}>- {review}</p>
       ))}
+      <textarea 
+        value={newUser} 
+        onChange={(e) => setNewUser(e.target.value)} 
+        placeholder="Enter your Username: "
+      ></textarea>
+      <br/>
       <textarea 
         value={newReview} 
         onChange={(e) => setNewReview(e.target.value)} 
