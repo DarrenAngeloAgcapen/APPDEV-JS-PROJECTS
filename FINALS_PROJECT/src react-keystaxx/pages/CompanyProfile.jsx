@@ -10,7 +10,7 @@ const employees = [
 const CompanyProfile = () => {
   return (
     <div className="container">
-      <h1>Meet Our Team</h1>
+      <h1 className='greet'>Meet Our Team</h1>
       <div className="employee-list">
         {employees.map((employee) => (
           <div key={employee.id} className="employee-card">

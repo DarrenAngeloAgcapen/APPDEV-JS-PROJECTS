@@ -1,6 +1,7 @@
 body {
   height: 100%;
-  margin: 0;
+  background-color: burlywood;
+  /* margin: 0; */
 }
 
 .container {
@@ -24,13 +25,13 @@ h1 {
 
 .mission-vision {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
   width: 100%;
+  font-size: 5rem;
 }
 
-.mission, .vision {
+/* .mission, .vision {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -39,20 +40,20 @@ h1 {
   color: #555;
   width: 100%;
   height: auto;
-}
+} */
 
-.mission h2, .vision h2 {
+/* .mission h2, .vision h2 {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 20px;
-}
+} */
 
-.mission p, .vision p {
+p {
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 22px;
 }
 
-.mission {
+/* .mission {
   background-color: #f4f7fb;
   border-left: 5px solid #007bff;
 }
@@ -60,7 +61,7 @@ h1 {
 .vision {
   background-color: #f4f7fb;
   border-left: 5px solid #28a745;
-}
+} */
 
 @media (max-width: 1024px) {
   .mission-vision {
