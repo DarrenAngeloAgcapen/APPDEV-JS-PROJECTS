@@ -2,14 +2,17 @@ import React from 'react';
 import './styles/ProductList.css';
 
 const products = [
-  { id: 1, name: 'Keyboard A [Mechanical]', description: 'Mechanical keyboard with RGB backlighting. Best for aesthetic purposes.' },
-  { id: 2, name: 'Keyboard B [Switches]', description: 'Ergonomic keyboard with soft-touch keys. Recommended for people who wants the most quiet keyboard' },
-  { id: 3, name: 'Keyboard C [60%]', description: 'A compact size keyboard that features only the most important keys for everyday life.' },
-  // Add more products
+  { id: 1, name: 'TacPro Mechanical', description: 'The keyboard that just has the right sensory feedback which provides satisfaction to most users.' }, //
+  { id: 2, name: 'RGB Gaming Chimera', description: 'Illuminate your gaming setup with dynamic RGB lighting.'}, //Chimera - various colors that flows harmoniously
+  { id: 3, name: 'EmKey Wireless Pro', description: 'A modern keyboard that focuses on functionality, portability, and a touch of minimalistic design.' }, //M(inimalistic)-Keyboard
+  { id: 4, name: 'LiKey Ergo V3', description: 'Ergonomic keyboard with soft-touch keys. Recommended for people who wants the most quiet keyboard' },//Linear & Ergonomic Key Version3
+  { id: 5, name: 'ComKey FRL', description: 'A compact size keyboard that features only the most important keys for everyday life.' },//Compact-Keyboard forRealLife
+  
 ];
 
 const ProductList = () => {
   return (
+    <div className='main-container'>
     <div className="container">
       <h1>Our Products</h1>
       <div className="product-list">
@@ -21,6 +24,11 @@ const ProductList = () => {
           </div>
         ))}
       </div>
+    </div>
+      <footer>
+        <hr/>
+        <p>© 2024 Keyboard Haven. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
