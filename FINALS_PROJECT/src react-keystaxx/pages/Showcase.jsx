@@ -6,6 +6,9 @@ const flagship = [
   { id: 1, name: 'TacPro Mechanical', description: 'The keyboard that just has the right sensory feedback which provides satisfaction to most users.' }, //
   { id: 2, name: 'RGB Gaming Chimera', description: 'Illuminate your gaming setup with dynamic RGB lighting.'}, //Chimera - various colors that flows harmoniously
   { id: 3, name: 'EmKey Wireless Pro', description: 'A modern keyboard that focuses on functionality, portability, and a touch of minimalistic design.' }, //M(inimalistic)-Keyboard
+  { id: 4, name: "Razer Huntsman V2", description: "An ultra-responsive optical keyboard with Razer's latest switches, sound-dampening foam, and customizable RGB lighting."},
+  { id: 5, name: "Logitech G Pro X", description: "A tenkeyless gaming keyboard with swappable mechanical switches, customizable lighting, and compact design for portability."},
+  { id: 6, name: "SteelSeries Apex Pro", description: "Features adjustable mechanical switches with per-key actuation, customizable RGB lighting, and an OLED smart display."},
 ];
   
 const Showcase = () => {

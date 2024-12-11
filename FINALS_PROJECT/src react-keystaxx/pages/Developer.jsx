@@ -19,7 +19,7 @@ const Developer = () => {
       <div>
         <h1>Developer Profile</h1>
         <p>Name: Agcapen, Darren Angelo</p>
-        <img src="./styles/Agcapen-PRPCOM-CV.jpg" alt="Darren Agcapen's Resume" style={{ width: '100%', maxWidth: '600px' }}/>
+        <img src="src\pages\styles\Agcapen-PRPCOM-CV.jpg" alt="Darren Agcapen's Resume" style={{ width: '100%', maxWidth: '600px' }}/>
         {/* <pre>{ManualResume.resume}</pre> */}
         <br /><br /><br />
         <h1>Are you satisfied with our Website?</h1>
